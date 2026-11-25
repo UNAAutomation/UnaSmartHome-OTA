@@ -1,0 +1,4 @@
+UnaSmartHome OTA connectivity test
+Date: 2026-11-25
+Probe: UNA-OTA-20261125-01
+This is a download test only, not a firmware image or an update manifest.
