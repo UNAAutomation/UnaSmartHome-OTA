@@ -4,10 +4,10 @@
   "target": "esp32c2",
   "debug": {
     "enabled": true,
-    "version": "1.0.4",
+    "version": "1.0.6",
     "date": "2026-11-26",
-    "file": "una_esp8684_mesh_fissa_1.0.4.bin",
-    "sha256": "a7478ca164563a06b005a75b60a2d70187335339657e52164f0729a76ac02de4"
+    "file": "una_esp8684_mesh_fissa_1.0.6.bin",
+    "sha256": "3cf79fc268d7226c02e46385ca5e2f461f6598f9aa49d2d8e8fb663d9287d4b1"
   },
   "release": {
     "enabled": false,

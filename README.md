@@ -2,9 +2,22 @@
 
 Repository pubblico destinato esclusivamente agli aggiornamenti firmware.
 
-- `automatico.json`: Debug abilitato per il collaudo 1.0.4; Release disabilitato.
+- `automatico.json`: Debug abilitato per il collaudo 1.0.6; Release disabilitato.
 - `manuale.json`: aggiornamento su richiesta, indipendente dai canali automatici.
-- `una_esp8684_mesh_fissa_1.0.4.bin`: APP ESP8684/ESP32-C2, versione `1.0.4-debug`.
+- `una_esp8684_mesh_fissa_1.0.6.bin`: APP ESP8684/ESP32-C2, versione `1.0.6-debug`.
+
+## Versione 1.0.6
+
+Include le correzioni locali 1.0.5: ingressi letti ogni 10 ms con antirimbalzo,
+salvataggi I/O differiti, controlli LED nella pagina Dispositivo, box uscite vuoti
+nascosti e comandi Accendi/Spegni oppure Riavvia tempo per T Restart acceso.
+Corretta l'inizializzazione delle card sui nodi senza layout-view, il recupero
+dopo errore iniziale del catalogo e l'identificazione degli asset per evitare cache vecchie.
+
+Build e test locali verificati. La stessa base 1.0.5 e stata provata via USB e
+browser sul dispositivo 1; la numerazione 1.0.6 non e stata flashata via USB.
+La pubblicazione non certifica l'installazione OTA sui moduli. Restano i problemi
+di RAM e rallentamenti durante HTTPS con BLE, e il collaudo fra piu nodi e aperto.
 
 ## Collaudo Mesh Fissa
 
