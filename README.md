@@ -4,7 +4,10 @@ Repository pubblico destinato esclusivamente agli aggiornamenti firmware.
 
 - `automatico.json`: canali Debug e Release distinti; attualmente disabilitati.
 - `manuale.json`: aggiornamento su richiesta, indipendente dai canali automatici.
-- `una_esp8684_manual_1.0.1.bin`: APP ESP8684/ESP32-C2, versione `1.0.1-debug`.
+- `una_esp8684_manual_1.0.1_r3.bin`: APP ESP8684/ESP32-C2, versione `1.0.1-debug`.
+
+Revisione di collaudo: stack HTTPS corretto e tabelle ECC pre-calcolate in flash.
+Il binario iniziale e stato ritirato per un overflow dello stack durante HTTPS.
 
 Il binario non incorpora credenziali Wi-Fi o token GitHub. Mantiene le impostazioni
 gia presenti sul dispositivo. Non e un'immagine completa per il primo flash:
