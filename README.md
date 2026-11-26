@@ -10,6 +10,11 @@ Revisione di collaudo: stack HTTPS corretto e tabelle ECC pre-calcolate in flash
 Riserva RAM aumentata ridimensionando task e buffer senza disabilitare BLE.
 Il binario iniziale e stato ritirato per un overflow dello stack durante HTTPS.
 
+Collaudo dispositivo 1: download reale GitHub da 1.0.0 a 1.0.1, progresso 100%,
+nuovo hash ELF verificato, impostazioni conservate e BLE attivo dopo il riavvio.
+Non e una versione qualificata per produzione: il margine RAM durante HTTPS
+con richieste web concorrenti resta molto basso e richiede altre ottimizzazioni.
+
 Il binario non incorpora credenziali Wi-Fi o token GitHub. Mantiene le impostazioni
 gia presenti sul dispositivo. Non e un'immagine completa per il primo flash:
 richiede la tabella partizioni a due slot OTA prevista dal progetto MESH_IDF.
