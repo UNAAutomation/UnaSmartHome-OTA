@@ -2,8 +2,9 @@
   "schema": 1,
   "product": "UnaSmartHome",
   "target": "esp32c2",
-  "enabled": false,
-  "version": "1.0.0",
+  "enabled": true,
+  "version": "1.0.1",
   "date": "2026-11-26",
-  "file": "una_esp8684_manual_1.0.0.bin"
+  "file": "una_esp8684_manual_1.0.1.bin",
+  "sha256": "5409e656097679ee2c81736538bac0db60af57e64aef962651a0f181f6f3707f"
 }
