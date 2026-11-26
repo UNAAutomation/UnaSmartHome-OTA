@@ -2,15 +2,33 @@
 
 Repository pubblico destinato esclusivamente agli aggiornamenti firmware.
 
-- `automatico.json`: canali Debug e Release distinti; attualmente disabilitati.
+- `automatico.json`: Debug abilitato per il collaudo 1.0.3; Release disabilitato.
 - `manuale.json`: aggiornamento su richiesta, indipendente dai canali automatici.
-- `una_esp8684_manual_1.0.1_r4.bin`: APP ESP8684/ESP32-C2, versione `1.0.1-debug`.
+- `una_esp8684_mesh_fissa_1.0.3.bin`: APP ESP8684/ESP32-C2, versione `1.0.3-debug`.
+
+## Collaudo Mesh Fissa
+
+Rete comune incorporata nel codice, senza pairing manuale. Le chiavi sono
+pubbliche e SOLO DI TEST: questa rete non protegge un impianto reale.
+Un solo gateway con indice zero; slave con indici distinti da 1 a 9.
+Tutte le schede nascono 2 luci / 2 rele con indice 1, da cambiare prima di
+utilizzarle insieme. Annunci di identita e tipo scheda ogni circa 15 secondi.
+
+OTA automatico predefinito al primo avvio. Una scelta Manuale gia salvata non
+viene forzata: cambiarla da interfaccia per ricevere gli aggiornamenti automatici.
+Le slave si aggiornano tramite Wi-Fi/OTA; non e un trasferimento firmware via BLE.
+Colori LED indipendenti salvati in NVS, blu predefinito, collegati ai rele.
+Il gateway mantiene disattivate le proprie uscite fisiche.
+
+Correzione del port NimBLE per il buffer loopback locale e stack OTA ampliato.
+Il binario 1.0.3 non incorpora la password Wi-Fi di prova: usa reti salvate.
+Non e l'immagine completa per un primo flash.
 
 Revisione di collaudo: stack HTTPS corretto e tabelle ECC pre-calcolate in flash.
 Riserva RAM aumentata ridimensionando task e buffer senza disabilitare BLE.
 Il binario iniziale e stato ritirato per un overflow dello stack durante HTTPS.
 
-Collaudo dispositivo 1: download reale GitHub da 1.0.0 a 1.0.1, progresso 100%,
+Collaudo precedente dispositivo 1: download reale GitHub da 1.0.0 a 1.0.1, progresso 100%,
 nuovo hash ELF verificato, impostazioni conservate e BLE attivo dopo il riavvio.
 Non e una versione qualificata per produzione: il margine RAM durante HTTPS
 con richieste web concorrenti resta molto basso e richiede altre ottimizzazioni.

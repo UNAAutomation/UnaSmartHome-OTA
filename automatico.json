@@ -3,10 +3,11 @@
   "product": "UnaSmartHome",
   "target": "esp32c2",
   "debug": {
-    "enabled": false,
-    "version": "1.0.0",
+    "enabled": true,
+    "version": "1.0.3",
     "date": "2026-11-26",
-    "file": "una_esp8684_debug_auto_1.0.0.bin"
+    "file": "una_esp8684_mesh_fissa_1.0.3.bin",
+    "sha256": "f320854e982ac5f55e60559b1b5fb0231482fde5cea62509e6c75cc35edd3315"
   },
   "release": {
     "enabled": false,
