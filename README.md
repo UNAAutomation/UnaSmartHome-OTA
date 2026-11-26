@@ -28,6 +28,10 @@ Non e l'immagine completa per un primo flash.
 L'AP di configurazione resta disponibile come fallback in assenza di reti valide.
 Aggiornamento automatico reale 1.0.2 -> 1.0.3 verificato sul dispositivo 1,
 con impostazioni e colori LED conservati e BLE online dopo il riavvio.
+Aggiornamento da file 1.0.3 -> 1.0.4 verificato, con hash ELF e dati conservati.
+Il tentativo automatico 1.0.3 -> 1.0.4 non e riuscito per memoria insufficiente.
+Stress 1.0.4 BLE + HTTPS + pagine concorrenti: 262 risposte valide e 10 timeout,
+nessun panic; la stabilita sotto questo carico NON e ancora raggiunta.
 
 Revisione di collaudo: stack HTTPS corretto e tabelle ECC pre-calcolate in flash.
 Riserva RAM aumentata ridimensionando task e buffer senza disabilitare BLE.
