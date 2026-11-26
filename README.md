@@ -2,9 +2,9 @@
 
 Repository pubblico destinato esclusivamente agli aggiornamenti firmware.
 
-- `automatico.json`: Debug abilitato per il collaudo 1.0.3; Release disabilitato.
+- `automatico.json`: Debug abilitato per il collaudo 1.0.4; Release disabilitato.
 - `manuale.json`: aggiornamento su richiesta, indipendente dai canali automatici.
-- `una_esp8684_mesh_fissa_1.0.3.bin`: APP ESP8684/ESP32-C2, versione `1.0.3-debug`.
+- `una_esp8684_mesh_fissa_1.0.4.bin`: APP ESP8684/ESP32-C2, versione `1.0.4-debug`.
 
 ## Collaudo Mesh Fissa
 
@@ -21,8 +21,13 @@ Colori LED indipendenti salvati in NVS, blu predefinito, collegati ai rele.
 Il gateway mantiene disattivate le proprie uscite fisiche.
 
 Correzione del port NimBLE per il buffer loopback locale e stack OTA ampliato.
-Il binario 1.0.3 non incorpora la password Wi-Fi di prova: usa reti salvate.
+Il binario pubblico non incorpora la password Wi-Fi di prova: usa reti salvate.
 Non e l'immagine completa per un primo flash.
+
+1.0.4 corregge l'avvio Wi-Fi sulle reti salvate: solo STA, senza AP superfluo.
+L'AP di configurazione resta disponibile come fallback in assenza di reti valide.
+Aggiornamento automatico reale 1.0.2 -> 1.0.3 verificato sul dispositivo 1,
+con impostazioni e colori LED conservati e BLE online dopo il riavvio.
 
 Revisione di collaudo: stack HTTPS corretto e tabelle ECC pre-calcolate in flash.
 Riserva RAM aumentata ridimensionando task e buffer senza disabilitare BLE.
