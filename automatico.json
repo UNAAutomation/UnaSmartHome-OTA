@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "product": "UnaSmartHome",
+  "target": "esp32c2",
+  "debug": {
+    "enabled": false,
+    "version": "1.0.0",
+    "date": "2026-11-26",
+    "file": "una_esp8684_debug_auto_1.0.0.bin"
+  },
+  "release": {
+    "enabled": false,
+    "version": "1.0.0",
+    "date": "2026-11-26",
+    "file": "una_esp8684_release_auto_1.0.0.bin"
+  }
+}
